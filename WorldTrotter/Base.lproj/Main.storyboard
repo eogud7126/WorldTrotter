@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                             <outletCollection property="gestureRecognizers" destination="SXn-NP-V4L" appends="YES" id="zJQ-vA-1wt"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tx1-3w-50T"/>
+                    <tabBarItem key="tabBarItem" title="convert" selectedImage="ConvertIcon" id="tx1-3w-50T"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="hvo-k0-K0W" id="CXk-uZ-HRs"/>
                         <outlet property="textField" destination="d0X-rF-aF0" id="uIU-HM-Ody"/>
@@ -82,16 +82,12 @@
             </objects>
             <point key="canvasLocation" x="880" y="637"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="GsY-NV-AAz">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gS-r1-v7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="Tr5-ZF-dGF" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="EYu-cx-JWd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
-                    <tabBarItem key="tabBarItem" title="Item" id="T3z-KS-0Rs"/>
+                <viewController id="Tr5-ZF-dGF" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" selectedImage="MapIcon" id="T3z-KS-0Rs"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="880" y="-165"/>
@@ -101,7 +97,8 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pi6-Ce-Ahi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wlW-Xx-LQ3">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="MapIcon" id="wlW-Xx-LQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -115,4 +112,8 @@
             <point key="canvasLocation" x="28" y="141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="48.5" height="32.5"/>
+        <image name="MapIcon" width="48.5" height="32.5"/>
+    </resources>
 </document>

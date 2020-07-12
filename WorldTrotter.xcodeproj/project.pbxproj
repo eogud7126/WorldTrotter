@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE63B36224B8D525007494EF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63B36124B8D525007494EF /* MapViewController.swift */; };
 		CE67A5ED24B73B16002B5230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67A5EC24B73B16002B5230 /* AppDelegate.swift */; };
 		CE67A5EF24B73B16002B5230 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67A5EE24B73B16002B5230 /* SceneDelegate.swift */; };
 		CE67A5F424B73B16002B5230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE67A5F224B73B16002B5230 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE63B36124B8D525007494EF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CE67A5E924B73B16002B5230 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE67A5EC24B73B16002B5230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE67A5EE24B73B16002B5230 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,10 +108,11 @@
 				CE67A5EC24B73B16002B5230 /* AppDelegate.swift */,
 				CE67A5EE24B73B16002B5230 /* SceneDelegate.swift */,
 				CE67A5F224B73B16002B5230 /* Main.storyboard */,
+				CE63B36124B8D525007494EF /* MapViewController.swift */,
+				CE67A61C24B74DCC002B5230 /* ConversionViewController.swift */,
 				CE67A5F524B73B17002B5230 /* Assets.xcassets */,
 				CE67A5F724B73B17002B5230 /* LaunchScreen.storyboard */,
 				CE67A5FA24B73B17002B5230 /* Info.plist */,
-				CE67A61C24B74DCC002B5230 /* ConversionViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				CE67A5ED24B73B16002B5230 /* AppDelegate.swift in Sources */,
 				CE67A61D24B74DCC002B5230 /* ConversionViewController.swift in Sources */,
 				CE67A5EF24B73B16002B5230 /* SceneDelegate.swift in Sources */,
+				CE63B36224B8D525007494EF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

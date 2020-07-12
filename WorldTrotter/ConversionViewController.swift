@@ -5,7 +5,6 @@ import UIKit
 class ConversionViewController: UIViewController{
     @IBOutlet weak var celsiusLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
-    
     @IBAction func fahrenheitFieldEditingChanged(_ sender: Any) {
         if let text = textField.text, let value = Double(text){
             fahrenheitValue = value
@@ -14,6 +13,11 @@ class ConversionViewController: UIViewController{
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("ConversionViewController loaded its view.")
+        
+    }
     var fahrenheitValue: Double?{
         didSet{
             updateCelsiusLabel()
